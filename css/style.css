@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* overflow-x: hidden; */
+}
+header {
+  display: flex;
+  padding: 15px;
+  position: absolute;
+  width: 98%;
+  /* overflow: hidden; */
+}
+/* nav{
+  position: absolute;
+} */
+.logo_container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  width: 33%;
+}
+.logo_container .logo_img img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+.logo_text {
+  font-size: 12px;
+}
+.menuhead nav {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.menuhead nav ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.menuhead nav ul li {
+  margin: 0 15px;
+  list-style-type: none;
+  cursor: pointer;
+}
+.shoppingCart {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shoppingCart img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.hd1,
+.hd2 {
+  width: 50px;
+  height: 200px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50px;
+  opacity: 0.2;
+}
+.hd1 {
+  right: 15px;
+  top: -20px;
+}
+.hd2 {
+  right: 100px;
+  top: -90px;
+}
+.intro {
+  display: flex;
+  /* height: 100vh; */
+  /* position: absolute; */
+  /* align-items: center; */
+}
+.introText{
+  font-size: 35px;
+}
+.right {
+  /* position: absolute; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin-left: 50px;
+}
+.buttonContainer{
+  margin-top: 5px;
+}
+.buttonContainer button{
+  width: 100px;
+  height: 40px;
+  background-color: yellow;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.images img {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  /* text-align: center; */
+  /* margin: auto; */
+}
+.img-b {
+  position: relative;
+  /* left: -600px; */
+  display: flex;
+  justify-content: center;
+  animation: slidy 15s infinite;
+}
+.images {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 400px;
+  /* left: 500px; */
+}
+.dot {
+  display: flex;
+  animation: dot 20s infinite;
+}
+.dot1 {
+  animation: dot1 20s infinite ;
+}
+.dot2 {
+  animation: dot2 20s infinite;
+}
+.dot3 {
+  animation: dot3 20s infinite;
+}
+.dot4 {
+  animation: dot4 20s infinite;
+}
+
+.dot div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px black solid;
+  margin: 0 5px;
+}
+.text {
+  display: flex;
+  justify-content: center;
+}
+.text::after {
+  content: "Hi";
+  text-align: center;
+  cursor: text;
+  animation: text 20s infinite linear;
+}
+.dot {
+  display: flex;
+  justify-content: center;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 106px 0;
+}
+.wishing{
+  width: 100%;
+  position: absolute;
+  /* position: relative; */
+  text-align: center;
+  bottom: 0;
+}
+/* keyframes for picture animation */
+@keyframes slidy {
+  0% {
+    left: 600px;
+  }
+  25% {
+    left: 200px;
+  }
+  50% {
+    left: -200px;
+  }
+  75% {
+    left: -600px;
+  }
+  100% {
+    left: 600px;
+  }
+}
+@keyframes dot1 {
+  0% {
+    background-color: black;
+  }
+  25%{
+    background-color: white;
+  }
+  50%{
+    background-color: white;
+  }
+  75%{
+    background-color: white;
+  }
+  100%{
+    background-color: black;
+  }
+}
+@keyframes dot2 {
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: black;
+  }
+  50% {
+    background-color: white;
+  }
+  75% {
+    background-color: white;
+  }
+  0% {
+    background-color: black;
+  }
+}
+@keyframes dot3 {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: black;
+  }
+  75% {
+    background-color: white;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@keyframes dot4 {
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: white;
+  }
+  50% {
+    background-color: white;
+  }
+  75% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@keyframes text{
+    0%{
+        content: '15.6inch display';
+    }
+    25%{
+        content: 'New RTX30 series GPU';
+    }
+    50%{
+        content: 'Intel i9 10th gen processer';
+    }
+    75%{
+        content: '64gb hyperX RAM';
+    }
+    100%{
+        content: '15.6inh display';
+    }
+}
